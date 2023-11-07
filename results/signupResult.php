@@ -4,5 +4,21 @@
 // si les données ne sont pas bonne : renvoyer vers le form d'enregistrement (redirect auto )
 // attention on veut récupérer les données rentrées précédement : $_SESSION
 
+// valid user name
+
+//valid email
+// valid mdp
+
+
+
+
+
+
+
+
+
+
+
+
 // Todo : traiter les données de mon form
 // envoyer les données dans la DB
