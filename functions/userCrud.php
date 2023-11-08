@@ -62,7 +62,6 @@ function getUserByName(string $user_name)
 
     $query = "SELECT * FROM user WHERE user.user_name = '" . $user_name . "';";
 
-    var_dump($query);
     $result = mysqli_query($conn, $query);
 
     // avec fetch row : tableau indexé
