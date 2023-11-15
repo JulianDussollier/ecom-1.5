@@ -8,7 +8,7 @@ function usernameIsValid(string $username): array
 
     ];
 
-    $userInDB = getUserByName($username);
+    $userInDB = getUserByUsername($username);
 
     if (strlen($username) < 2) {
         $result = [
@@ -49,10 +49,10 @@ function emailIsValid($email)
 
 function pwdLenghtValidation($pwd)
 {
-    //minimum 8 max 16
+    //minimum 6 max 16
     $length = strlen($pwd);
 
-    if ($length < 8) {
+    if ($length < 6) {
         return [
             'isValid' => false,
             'msg' => 'Votre mot de passe est trop court. Doit être supérieur a 8 caractères'
